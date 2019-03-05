@@ -7,7 +7,7 @@
     "webpack": "webpack",
     "webpack-dev-server": "webpack-dev-server",
     "debug": "node --inspect --inspect-brk ./node_modules/webpack/bin/webpack.js",
-    "prod": "npm run webpack-dev-server -- --env.mode production",
+    "prod": "npm run webpack -- --env.mode production",
     "dev": "npm run webpack-dev-server -- --env.mode development",
     "prod:debug": "npm run debug -- --env.mode production",
     "dev:debug": "npm run debug -- --env.mode development"
@@ -24,7 +24,9 @@
   },
   "homepage": "https://github.com/maniR1990/webpack-workshop-2019#readme",
   "devDependencies": {
-    "http-server": "^0.11.1"
+    "clean-webpack-plugin": "^2.0.0",
+    "http-server": "^0.11.1",
+    "webpack-merge": "^4.2.1"
   },
   "dependencies": {
     "babel-loader": "^7.1.5",
