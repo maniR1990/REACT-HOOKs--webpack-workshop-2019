@@ -3,7 +3,15 @@
   "version": "1.0.0",
   "description": "Learning resources for the webpack workshop series for 2019",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "webpack": "webpack",
+    "webpack-dev-server": "webpack-dev-server",
+    "debug": "node --inspect --inspect-brk ./node_modules/webpack/bin/webpack.js",
+    "prod": "npm run webpack-dev-server -- --env.mode production",
+    "dev": "npm run webpack-dev-server -- --env.mode development",
+    "prod:debug": "npm run debug -- --env.mode production",
+    "dev:debug": "npm run debug -- --env.mode development"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/maniR1990/webpack-workshop-2019.git"
