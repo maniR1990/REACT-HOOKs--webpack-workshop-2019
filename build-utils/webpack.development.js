@@ -1,4 +1,5 @@
 module.exports = () => ({
+  
     module: {
         output: {
             filename: "bundle.js"

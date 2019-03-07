@@ -7,7 +7,7 @@
     "webpack": "webpack",
     "webpack-dev-server": "webpack-dev-server",
     "debug": "node --inspect --inspect-brk ./node_modules/webpack/bin/webpack.js",
-    "prod": "npm run webpack -- --env.mode production",
+    "prod": "npm run webpack-dev-server  -- --env.mode production",
     "dev": "npm run webpack-dev-server -- --env.mode development",
     "prod:debug": "npm run debug -- --env.mode production",
     "dev:debug": "npm run debug -- --env.mode development"
@@ -41,6 +41,6 @@
     "url-loader": "^1.0.1",
     "webpack": "^4.15.1",
     "webpack-cli": "^3.0.8",
-    "webpack-dev-server": "^3.1.4"
+    "webpack-dev-server": "^3.2.1"
   }
 }
