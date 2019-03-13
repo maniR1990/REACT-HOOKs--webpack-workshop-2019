@@ -1,16 +1,11 @@
 {
-  "name": "webpack-workshop-2019",
+  "name": "reactjs",
   "version": "1.0.0",
-  "description": "Learning resources for the webpack workshop series for 2019",
+  "description": "Learning resources for the react v4 series for 2019",
   "main": "index.js",
   "scripts": {
-    "webpack": "webpack",
-    "webpack-dev-server": "webpack-dev-server",
-    "debug": "node --inspect --inspect-brk ./node_modules/webpack/bin/webpack.js",
-    "prod": "npm run webpack-dev-server  -- --env.mode production",
-    "dev": "npm run webpack-dev-server -- --env.mode development",
-    "prod:debug": "npm run debug -- --env.mode production",
-    "dev:debug": "npm run debug -- --env.mode development"
+    "dev": "parcel src/index.html",
+    "lint": "eslint \"src/**/*.{js, jsx}\""
   },
   "repository": {
     "type": "git",
@@ -24,23 +19,19 @@
   },
   "homepage": "https://github.com/maniR1990/webpack-workshop-2019#readme",
   "devDependencies": {
-    "clean-webpack-plugin": "^2.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.15.1",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.4",
     "http-server": "^0.11.1",
-    "webpack-merge": "^4.2.1"
+    "parcel-bundler": "^1.12.0",
+    "prettier": "1.16.4"
   },
   "dependencies": {
-    "babel-loader": "^7.1.5",
-    "babel-preset-env": "^1.7.0",
-    "css-loader": "^1.0.0",
-    "file-loader": "^1.1.11",
-    "fork-ts-checker-webpack-plugin": "^0.4.2",
-    "html-webpack-plugin": "^3.2.0",
-    "mini-css-extract-plugin": "^0.4.1",
-    "style-loader": "^0.21.0",
-    "ts-loader": "^4.4.2",
-    "url-loader": "^1.0.1",
-    "webpack": "^4.15.1",
-    "webpack-cli": "^3.0.8",
-    "webpack-dev-server": "^3.2.1"
+    "react": "^16.0.0",
+    "react-dom": "^16.8.4"
   }
 }
