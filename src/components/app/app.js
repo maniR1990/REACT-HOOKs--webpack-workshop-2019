@@ -1,13 +1,17 @@
-import React, {Component} from 'react';
+import React, { useState } from "react";
 
-class App extends Component {
-/** eslint-disable-next-line */
-    render () {
-        return (
-            <div class="wrapper">
+import Search from "./../searchComponent/search";
 
-            </div>            
-        )
-    }
+const App = () => {
+  return (
+      <div>
+          
+         <h2>hello</h2>
+         <Search/>
+      </div>
+  );
 
+  
 }
+
+export default App;
