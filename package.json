@@ -4,6 +4,7 @@
   "description": "Learning resources for the react v4 series for 2019",
   "main": "index.js",
   "scripts": {
+    "clear-build-cache": "rm -rf dist/ .cache/",
     "dev": "parcel src/index.html",
     "lint": "eslint \"src/**/*.{js, jsx}\""
   },
@@ -30,6 +31,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-react-hooks": "^1.5.1",
     "http-server": "^0.11.1",
     "parcel-bundler": "^1.12.0",
     "prettier": "1.16.4"

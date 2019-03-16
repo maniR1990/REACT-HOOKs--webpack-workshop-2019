@@ -9,9 +9,10 @@
 
    ],
    "rules": {
-       "react/prop-types": 0
+       "react/prop-types": 0,
+       "react-hooks/rules-of-hooks": "error"
    },
-   "plugins":["react", "import", "jsx-ally"],
+   "plugins":["react", "import", "jsx-ally", "react-hooks"],
    "parser" : "babel-eslint",
    "parserOptions" : {
        "ecmaVersion" : 2018,
