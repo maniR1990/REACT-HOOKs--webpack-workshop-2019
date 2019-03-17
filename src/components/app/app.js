@@ -1,15 +1,17 @@
 import React, { useState } from "react";
 
 import Search from "./../searchComponent/search";
+import pf from "petfinder-client";
+
 
 const App = () => {
   return (
-      <div>
-          
-         <h2>hello</h2>
-         <Search/>
-      </div>
-  );
+    <React.StrictMode>
+        <div>
+          <h2>hello</h2>
+          <Search/>
+       </div>
+    </React.StrictMode>  );
 
   
 }
