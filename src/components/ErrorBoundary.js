@@ -1,11 +1,14 @@
 import React, { Component } from 'react' ;
-import { Link } from '@reach/router';
+import { Link, redirectTo } from '@reach/router';
 
 
 /* as per now, error boundaries are not supported on hooks, 
 only with class component it works */
 class ErrorBoundary Extends Component {
-    state = {hasError : false}
+    state = {
+        hasError : false,
+        redirect : false
+    }
     static getDerivedStatefromError() {
         return {
             hasError : true
@@ -17,13 +20,23 @@ class ErrorBoundary Extends Component {
         if(process.env.NODE_ENV === 'development') {
             console.error('errorBoundary caught an err', error, info)
         }
-        
     }
+    componentDidUpdate() {
+        if (this.state.hasError) {
+            setTimeout(function () { redirect: true }, 5000)
+        }
+    }
+
+
     render () {
         if (this.state.hasError) {
             <h1>
                  There was an error with this listing. 
             </h1>
+        }
+
+        if ( this.state.redirect) {
+            return <Redirect to="/"></Redirect>
         }
 
         return this.props.children;
